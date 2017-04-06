@@ -1,0 +1,42 @@
+{
+	// Required
+	"manifest_version": 2,
+	"name": "Youtube Video Preview",
+	"version": "1.0",
+	// Recommended
+	//"default_locale": "en",
+	"description": "View Youtube previews over the thumbnail without leaving the page",
+	"icons": {},
+	// Pick one (or none)
+	"page_action": {
+		"default_icon": { // optional
+			// "16": "images/icon16.png", // optional
+			// "24": "images/icon24.png", // optional
+			// "32": "images/icon32.png" // optional
+		},
+		"default_title": "Youtube Video Preview" // optional; shown in tooltip
+	},
+	// Optional
+	"options_page": "html/options.html",
+	"author": "Acidic",
+	"permissions": [
+		"tabs",
+		"*://*.youtube.com/*",
+		"storage"
+	],
+	"background": {
+        "persistent":true,
+        "page":"html/bg.html"
+    },
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.youtube.com/*"
+			],
+			"js": [
+				"js/jquery.min.js",
+				"js/youtube-overlay.js"
+			]
+		}
+	]
+}

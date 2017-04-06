@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Options :: Youtube Preview Overlay</title>
+		<link rel="stylesheet" type="text/css" href="../css/bulma.css">
+		<link rel="stylesheet" type="text/css" href="../css/ion.rangeSlider.css">
+		<link rel="stylesheet" type="text/css" href="../css/ion.rangeSlider.skinHTML5.css">
+		<link rel="stylesheet" type="text/css" href="../css/notyf.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/options.css">
+	</head>
+	<body>
+		<div class="columns">
+			<div class="column is-half box options-container">
+				<h2 class="title is-3"><b>Options</b> :: Youtube Preview Overlay</h2>
+
+				<div class="field">
+					<p class="control">
+						<label class="label">Volume</label>
+						<input type="text" id="volume" value="">
+						<!--<input class="slider" type="range" min="0" max="100" step="5" value="80">-->
+					</p>
+				</div>
+
+				<div class="field">
+					<p class="control">
+						<label class="label">Playback Speed</label>
+						<input type="text" id="playbackSpeed" value="">
+						<!--<input class="slider" type="range" min="0" max="100" step="5" value="80">-->
+					</p>
+				</div>
+
+				<div class="field">
+					<p class="control">
+						<label class="checkbox">
+							<input type="checkbox" id="resumePlayback">
+							Resume Playback
+						</label>
+					</p>
+				</div>
+
+				<div class="field is-grouped">
+					<p class="control">
+						<button class="button is-primary" id="saveSettingsBtn">Save</button>
+					</p>
+					<p class="control">
+						<button class="button is-link" id="resetSettingsBtn">Defaults</button>
+					</p>
+				</div>
+			</div>
+		</div>
+        
+        <div class="columns">
+			<div class="column is-half box options-container">
+				<h2 class="title is-3"><b>About</b> :: Youtube Preview Overlay</h2>
+
+				<p><b>Things you should know</b></p>
+                <ul>
+                	<li>Adblock is pretty much needed with Youtube Preview Overlay</li>
+                    <li>This extension is new and feature ideas are welcome</li>
+                    <li>I'm a developer studying a diploma website development</li>
+                    <li>This is my first ever chrome extension</li>
+                </ul>
+                <hr>
+                <p><i>You can leave feedback/report a bug/request a feature at the <a href="https://github.com/Acidic9/youtube-video-overlay/issues">gitgub repository.</a></i></p>
+			</div>
+		</div>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/ion.rangeSlider.min.js"></script>
+		<script src="../js/notyf.min.js"></script>
+		<script src="../js/options.js"></script>
+	</body>
+</html>
